@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Store - Tsany Aurellia</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <table align="center" width="500px" border="0" cellspacing="0" cellpadding="10">
+        <form name="Bayar" class="form">
+            <tr class="judul">
+                <td colspan="2">- PENJUALAN BARANG -</td>
+            </tr>
+            <tr class="isi">
+                <td>
+                    <label for="kode">Kode Barang</label><br>
+                    <input type="text" id="kode"/><br>
+                </td>
+                <td >
+                    <label for="namaBarang">Nama Barang</label><br>
+                    <input type="text" id="namaBarang"/><br>
+                </td>
+            </tr>
+            <tr class="isi">
+                <td >
+                    <label for="harga">Harga</label><br>
+                    <input type="text" placeholder="0" id="harga"/><br>
+                </td>
+                <td >
+                    <label for="jumlah">Jumlah Jual</label><br>
+                    <input type="text" placeholder="0" id="jumlah"/><br>
+                </td>
+            </tr>
+            <tr class="isi output">
+                <td >
+                    <label for="subTotal">Sub Total</label><br>
+                    <input type="text" placeholder="Rp 0,-" id="subTotal" disabled/><br>
+                </td>
+                <td >
+                    <label for="diskon">Diskon</label><br>
+                    <input type="text" placeholder="0%" id="diskon" disabled/><br>
+                </td>
+            </tr>
+            <tr class="isi output">
+                <td >
+                    <label for="nilai">Nilai Diskon</label><br>
+                    <input type="text" placeholder="Rp 0,-" id="nilai" disabled/><br>
+                </td>
+                <td >
+                    <label for="total">Total Bayar</label><br>
+                    <input type="text" placeholder="Rp 0,-" id="total" disabled/><br>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" colspan="2">
+                    <button class="bayar" type="button" onclick="isi()"><i class="fa fa-credit-card" aria-hidden="true"></i> Bayar</button>
+                    <button class="batal" type="reset"><i class="fa fa-times-circle" aria-hidden="true"></i> Batal</button>
+                </td>
+            </tr>
+    </table>
+        </form>
+    <script src="js.js"></script> 
+</body>
+</html>
